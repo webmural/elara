@@ -1,0 +1,79 @@
+html {
+  font-size: max(20pt, 16vmin);
+  line-height: 1.618;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font: 1.618em sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  padding: 10pt;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+address {
+  font: unset;
+  text-transform: uppercase;
+}
+
+kbd {
+  font-family: cursive;
+}
+
+.grace {
+  margin: 1em;
+}
+
+@media (orientation: portrait) {
+  .grace {
+    margin-inline: 2em;
+    writing-mode: vertical-rl;
+  }
+}
+
+:focus {
+  outline: thick outset;
+  text-decoration-style: dotted;
+}
+
+@media (color) {
+  ::selection {
+    background: springgreen;
+    color: black;
+  }
+
+  :root {
+    background-color: peachpuff;
+    background-image: linear-gradient(.6turn, peachpuff, salmon, deepskyblue, pink, papayawhip, lemonchiffon, mistyrose);
+    color: saddlebrown;
+  }
+
+  :any-link {
+    color: brown;
+    background-color: peachpuff;
+    box-shadow: 0 0 1em 1ch papayawhip;
+  }
+
+  h1 {
+    text-shadow:
+      -1vw -1vh 0 coral,
+      -2vw -2vh 0 salmon,
+      -3vw -3vh 0 chocolate,
+      -4vw -4vh 0 sandybrown,
+      -5vw -5vh 0 peru,
+      -6vw -6vh 0 limegreen,
+      -7vw -7vh 0 peachpuff;
+  }
+}
